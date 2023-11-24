@@ -1,28 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: es.ull.flights.FlightTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.103 s <<< FAILURE! - in es.ull.flights.FlightTest
-testGetNumberOfPassengers  Time elapsed: 0.074 s  <<< ERROR!
-java.lang.RuntimeException: Invalid country code
-	at es.ull.flights.FlightTest.setUp(FlightTest.java:20)
-
-testGetFlightNumber  Time elapsed: 0 s  <<< ERROR!
-java.lang.RuntimeException: Invalid country code
-	at es.ull.flights.FlightTest.setUp(FlightTest.java:20)
-
-testAddPassengerExceedingSeats  Time elapsed: 0.002 s  <<< ERROR!
-java.lang.RuntimeException: Invalid country code
-	at es.ull.flights.FlightTest.setUp(FlightTest.java:20)
-
-testAddPassenger  Time elapsed: 0.002 s  <<< ERROR!
-java.lang.RuntimeException: Invalid country code
-	at es.ull.flights.FlightTest.setUp(FlightTest.java:20)
-
-testRemovePassenger  Time elapsed: 0.002 s  <<< ERROR!
-java.lang.RuntimeException: Invalid country code
-	at es.ull.flights.FlightTest.setUp(FlightTest.java:20)
-
-testInvalidFlightNumber  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.RuntimeException: Invalid country code
-	at es.ull.flights.FlightTest.setUp(FlightTest.java:20)
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 s - in es.ull.flights.FlightTest

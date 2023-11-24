@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.ull.flights.FlightTest" time="0.126" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.ull.flightspassengers.MixedTest" time="0" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -57,9 +57,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="testAddPassengerExceedsSeats" classname="es.ull.flights.FlightTest" time="0.084"/>
-  <testcase name="testAddPassenger" classname="es.ull.flights.FlightTest" time="0.004"/>
-  <testcase name="testRemovePassenger" classname="es.ull.flights.FlightTest" time="0.003"/>
-  <testcase name="testInvalidFlightNumber" classname="es.ull.flights.FlightTest" time="0.003"/>
-  <testcase name="testValidFlightNumber" classname="es.ull.flights.FlightTest" time="0.006"/>
+  <testcase name="testMixedScenario" classname="es.ull.flightspassengers.MixedTest" time="0"/>
 </testsuite>
