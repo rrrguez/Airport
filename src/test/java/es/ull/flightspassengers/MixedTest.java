@@ -3,9 +3,9 @@ package es.ull.flightspassengers;
 import es.ull.passengers.Passenger;
 import es.ull.flights.Flight;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.*;
 
 public class MixedTest {
 
