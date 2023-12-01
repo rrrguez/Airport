@@ -51,4 +51,12 @@ public class PassengerTest {
         assertThrows(RuntimeException.class, () -> passenger2.joinFlight(flight1));
     }
 
+    @Test
+    public void testToString() {
+        Passenger passenger1 = new Passenger("ID123", "John Doe", "US");
+        Passenger passenger2 = new Passenger("ID456", "Jane Doe", "CA");
+        assertEquals("Passenger John Doe with identifier: ID123 from US", passenger1.toString());
+        assertEquals("Passenger Jane Doe with identifier: ID456 from CA", passenger2.toString());
+    }
+
 }
