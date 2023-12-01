@@ -9,8 +9,10 @@ import static org.junit.Assert.assertThrows;
 
 public class PassengerTest {
     @Test
-    public void testValidCountryCode() {
+    public void testGetters() {
         Passenger passenger = new Passenger("ID123", "John Doe", "US");
+        assertEquals("ID123", passenger.getIdentifier());
+        assertEquals("John Doe", passenger.getName());
         assertEquals("US", passenger.getCountryCode());
     }
 
