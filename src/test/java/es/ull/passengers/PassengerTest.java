@@ -97,6 +97,5 @@ public class PassengerTest {
         Passenger passenger2 = new Passenger("ID456", "Jane Doe", "CA");
         assertEquals("Passenger John Doe with identifier: ID123 from US", passenger1.toString());
         assertEquals("Passenger Jane Doe with identifier: ID456 from CA", passenger2.toString());
-        assertNotEquals("", passenger1.toString());
     }
 }
