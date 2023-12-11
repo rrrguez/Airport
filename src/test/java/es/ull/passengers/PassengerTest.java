@@ -43,6 +43,15 @@ public class PassengerTest {
     }
 
     /**
+     * @brief Test toString() method
+     */
+    @Test
+    public void testToString() {
+        Passenger passenger = new Passenger("ID123", "John Doe", "US");
+        assertEquals("Passenger " + passenger.getName() + " with identifier: " + passenger.getIdentifier() + " from " + passenger.getCountryCode(), passenger.toString());
+    }
+    
+    /**
      * @brief Tests creating a Passenger object with an invalid country code.
      */
     @Test
