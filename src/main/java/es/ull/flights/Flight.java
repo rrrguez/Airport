@@ -6,8 +6,6 @@
  * certain number of seats. It manages the addition and removal of passengers.
  * The flight number must follow a specific pattern defined by a regular expression.
  *
- * @author Your Name
- * @date [Date]
  */
 
 package es.ull.flights;
