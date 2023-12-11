@@ -46,6 +46,43 @@ public class FlightTest {
     }
 
     @Test
+    public void joinFlight_RemovePassengerFails() {
+        // Test when removing passenger from previous flight fails
+        Passenger passenger = new Passenger("ID123", "John Doe", "US");
+        Flight flight = new Flight("AB123", 10); // Utiliza un número de vuelo y cantidad de asientos apropiados
+        Flight previousFlight = new Flight("CD456", 5); // Utiliza un número de vuelo y cantidad de asientos apropiados
+        passenger.setFlight(previousFlight);
+
+        // Override removePassenger to simulate failure
+        Flight flightWithRemoveFailure = new Flight("EF789", 8); // Utiliza un número de vuelo y cantidad de asientos apropiados
+        flightWithRemoveFailure = new Flight("EF789", 8) {
+            @Override
+            public boolean removePassenger(Passenger passenger) {
+                return false; // Simula el fallo al eliminar el pasajero
+            }
+        };
+        passenger.setFlight(flightWithRemoveFailure);
+
+        // Assert that joining the new flight throws RuntimeException
+        assertThrows(RuntimeException.class, () -> passenger.joinFlight(flight));
+    }
+
+    @Test
+    public void joinFlight_AddPassengerFails() {
+        // Test when adding passenger to the new flight fails
+        Passenger passenger = new Passenger("ID123", "John Doe", "US");
+        Flight flightWithAddFailure = new Flight("GH101", 2) {
+            @Override
+            public boolean addPassenger(Passenger passenger) {
+                return false; // Simula el fallo al agregar el pasajero
+            }
+        };
+
+        // Assert that joining the new flight throws RuntimeException
+        assertThrows(RuntimeException.class, () -> passenger.joinFlight(flightWithAddFailure));
+    }
+    
+    @Test
     public void testMixedScenario() {
         // Create flights
         Flight flight1 = new Flight("AB123", 2);
